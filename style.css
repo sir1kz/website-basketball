@@ -1,0 +1,203 @@
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('img/zakk.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;         /* Включаем Flexbox */
+    align-items: center;    /* Выравнивает элементы по вертикали (строго по центру) */
+            /* Расстояние между картинкой и текстом */
+    margin-left: 1px;      /* Отступ слева, если нужен */
+}
+
+
+.box    {
+    width: 900px;
+    height: auto;
+    border: 1px ridge #333;
+  /* padding: 50px; */
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+   padding: 20px;
+}
+
+video {
+    width: 300px;
+    height: 200px;
+    display: block;    /* Делаем блочным, чтобы работали отступы */
+    margin-left: 0px;    /* Прижимаем к левому краю */
+    margin-right: auto;
+    object-fit: cover; /* Важно: видео заполнит область 300x200 без черных полос */
+    border-radius: 8px;
+    flex-shrink: 0;
+    
+}
+
+.header-content img {
+    width: 200px;          /* Укажите нужный размер */
+    height: 200px;
+}
+
+/*
+img {
+    margin-left: 10px;   
+    margin-right: auto;
+    width: 300px; 
+    height: 300px;
+    margin-right: 40px;
+} 
+*/
+
+.zalando-sans-semiexpanded-skibidi {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 0px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+     
+}
+
+.akademia   {
+     display: flex;      
+    align-items: center;   
+    gap: 30px;            
+    margin-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.gazetka {
+     width: auto;
+    max-width: 400px; /* максимальная ширина */
+    overflow: hidden;
+    width: 100%;
+
+    
+}
+
+.gazetka h2 {
+    text-align: center; /* текст будет над правым краем картинки */
+}
+
+.gazetka-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.gazetka-left-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gazetka-left-text {
+    flex: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+      margin-top: 50px;
+}
+
+#slider {
+    width: 100%; /* картинка будет занимать всю ширину родителя */
+    height: auto;
+    border-radius: 30px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 170, 0);
+}
+
+
+
+.we {
+    width: 200px;
+    height: 250px;
+      display: block;        /* обязательно */
+    margin-left: auto;     /* прижимает вправо */
+    
+}
+
+.insta img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+     transition: transform 0.3s, filter 0.3s;
+}
+   
+.insta img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+}
+
+.insta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.kontakt {
+  text-align: center;
+}
+
+.kontakt a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin: 5px;
+    transition: background 0.3s;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.kontakt a:hover {
+    background-color: #f0c000;
+    color: black;
+}
+    
+
+.sponsorzy {
+  text-align: center;
+  padding: 30px 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sponsorzy-loga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.sponsorzy-loga img {
+  height: 60px;
+  width: auto;
+  opacity: 0.7;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
