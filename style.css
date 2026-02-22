@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('img/zakk.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-left: 1px;
+    flex-wrap: wrap; /* перенос на мобиле */
+    gap: 10px;
+}
+
+.box {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border: 1px ridge #333;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+video {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.header-content img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%; /* не выходит за экран */
+}
+
+.zalando-sans-semiexpanded-skibidi {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 0px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.akademia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 5px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gazetka {
+    max-width: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gazetka h2 {
+    text-align: center;
+}
+
+.gazetka-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* перенос на мобиле */
+}
+
+.gazetka-left-text {
+    flex: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    margin-top: 50px;
+    min-width: 200px; /* не сжимается слишком сильно */
+}
+
+#slider {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 170, 0);
+}
+
+.we {
+    width: 200px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto; /* пропорции на мобиле */
+}
+
+.insta img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.insta img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+}
+
+.insta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.kontakt {
+  text-align: center;
+}
+
+.kontakt a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin: 5px;
+    transition: background 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kontakt a:hover {
+    background-color: #f0c000;
+    color: black;
+}
+
+.sponsorzy {
+  text-align: center;
+  padding: 30px 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sponsorzy-loga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.sponsorzy-loga img {
+  height: 60px;
+  width: auto;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/* ===== ТЕЛЕФОН (до 600px) ===== */
+@media (max-width: 600px) {
+
+  .box {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .header-content img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .zalando-sans-semiexpanded-skibidi {
+    font-size: 15px;
+  }
+
+  .akademia {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  .gazetka-wrapper {
+    flex-direction: column;
+  }
+
+  .gazetka-left-text {
+    margin-top: 10px;
+    font-size: medium;
+  }
+
+  .gazetka {
+    max-width: 100%;
+  }
+
+  .we {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
+
+  .insta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .kontakt a {
+    display: block;
+    margin: 5px auto;
+    max-width: 260px;
+  }
+
+  .sponsorzy-loga img {
+    height: 45px;
+  }
+}
