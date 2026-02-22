@@ -96,7 +96,7 @@ video {
 
 .gazetka-left-text {
     flex: 1;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: 'Montserrat', sans-serif;
     font-size: large;
     margin-top: 50px;
     min-width: 200px; /* не сжимается слишком сильно */
